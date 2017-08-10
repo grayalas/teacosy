@@ -1,3 +1,5 @@
+/*  Global  */
+
 body  {
   font-family: Helvetica;
   font-size: 22px;
@@ -5,8 +7,25 @@ body  {
   color: seashell;
   opacity: 0.9;
   text-align: center;
-  padding-top: 100px;
 }
+
+a {
+  color: seashell;
+  padding-left: 15px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+/*  Header navigation  */
 
 header  {
   display: flex;
@@ -26,14 +45,7 @@ header  {
   height: 50px;
 }
 
-a {
-  color: seashell;
-  padding-left: 15px;
-}
-
-#featured-tea, #locations {
-  margin-top: 100px;
-}
+/*  Mission section  */
 
 #mission  {
   height: 700px;
@@ -50,29 +62,15 @@ a {
   width: 100%;
 }
 
+/*  Featured tea section  */
+
 #featured-tea {
   max-width: 1000px;
   margin: 75px auto;
 }
 
-.flex-container {
-  display: flex;
-  justify-content: center;
-}
-
 .flex-container.shop-items  {
   flex-flow: row wrap;
-
-}
-
-.flex-container.location-items  {
-
-}
-
-.item {
-  display: flex;
-  flex-direction: column;
-  padding: 5px;
 }
 
 .item img {
@@ -83,6 +81,8 @@ a {
 .item span  {
   padding: 5px;
 }
+
+/*  Location section  */
 
 #locations  {
   background-image: url("../images/img-locations-background.jpg");
@@ -104,6 +104,8 @@ a {
   width: 300px;
   margin: 0px 20px;
 }
+
+/*  Footer section  */
 
 footer .footer-contact  {
   height: 200px;
